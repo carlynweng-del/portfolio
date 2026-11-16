@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f9f9f7">
+<meta name="description" content="Carlyn Weng — Business Economics, analytics, AI and automation. Selected work and experience.">
+<title>Carlyn Weng — Portfolio</title>
+<style>
+:root{--paper:#f9f9f7;--white:#fff;--ink:#1b1c1d;--muted:#686b70;--line:#e0e1df;--soft:#f0f1ef;--mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;font-size:15px}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}::selection{background:#d6d8d3;color:var(--ink)}
+.wrap{width:min(1220px,calc(100% - 96px));margin:auto}.skip{position:absolute;left:0;top:-80px;padding:12px;background:white;z-index:99}.skip:focus{top:0}
+header{position:sticky;top:0;background:rgba(249,249,247,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);z-index:25}header .wrap{height:76px;display:flex;justify-content:space-between;align-items:center;gap:24px}.logo{font-size:19px;letter-spacing:-.09em;font-weight:800}.logo span{font-weight:400;margin-left:2px}.nav{display:flex;gap:38px;align-items:center}.nav a{font-size:12px;color:#56595b;transition:color .2s}.nav a:hover{color:black}.nav .nav-contact{color:var(--ink);font-weight:600}.mobile-menu{display:none;background:transparent;border:0;font-size:20px}
+.hero{padding:132px 0 107px;border-bottom:1px solid var(--line)}.hero-kicker,.kicker{font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--muted)}.hero-kicker{display:flex;align-items:center;gap:13px}.hero-kicker:before{content:"";width:24px;height:1px;background:var(--ink)}.hero-grid{display:grid;grid-template-columns:1.5fr .5fr;gap:80px;align-items:end}.hero h1{font-size:clamp(62px,8.3vw,132px);line-height:.93;letter-spacing:-.095em;font-weight:600;margin:35px 0 35px;max-width:900px}.hero h1 span{display:block}.hero h1 .outline{color:#858a8a}.lead{font-size:clamp(17px,2vw,22px);line-height:1.65;letter-spacing:-.025em;color:#51555a;max-width:665px;margin:0}.hero-side{padding-bottom:6px;display:flex;flex-direction:column;align-items:flex-start;gap:27px}.side-label{font:10px var(--mono);letter-spacing:.1em;color:var(--muted);text-transform:uppercase}.hero-side p{font-size:14px;line-height:1.8;color:#5e6265;margin:9px 0 0}.text-link{display:inline-flex;align-items:center;gap:16px;padding:0 0 8px;border-bottom:1px solid var(--ink);font-size:13px;font-weight:600;transition:gap .2s}.text-link:hover{gap:24px}.hero-bottom{margin-top:91px;display:flex;gap:30px;align-items:center;justify-content:space-between;font:11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:#797d80}.hero-bottom .scroll{color:#36383b}
+.section{padding:105px 0;border-bottom:1px solid var(--line)}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:50px}.section-heading h2{font-weight:550;font-size:clamp(40px,5vw,68px);letter-spacing:-.075em;line-height:1.06;margin:18px 0 0}.section-heading p{color:#777b7d;line-height:1.8;font-size:14px;max-width:345px;margin:0}.filters{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 28px}.filter{background:transparent;border:1px solid #dadbd8;padding:9px 14px;border-radius:100px;font-size:12px;color:#666a6d}.filter.active,.filter:hover{background:var(--ink);border-color:var(--ink);color:white}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.project{background:var(--white);border:1px solid #e1e2e0;display:flex;flex-direction:column;min-width:0;transition:transform .2s,box-shadow .2s}.project:hover{transform:translateY(-3px);box-shadow:0 10px 32px #00000009}.project[hidden]{display:none}.project.featured{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr}.visual{height:255px;display:flex;position:relative;align-items:center;justify-content:center;overflow:hidden;background:#e9eae8}.featured .visual{height:100%;min-height:360px}.visual .visual-label{position:absolute;top:25px;left:28px;font:10px var(--mono);color:#757a7d;letter-spacing:.12em}.visual .visual-count{position:absolute;bottom:23px;right:26px;font:11px var(--mono);color:#818589}.visual.ir{background:#e8e9e7}.visual.seg{background:#eceeeb}.visual.auto{background:#edecea}.visual.ab{background:#efefed}.visual.spotify{background:#e8eae9}.mock-window{border:1px solid #c7cbc8;background:#fafbfa;width:70%;max-width:380px;padding:16px;box-shadow:12px 13px 0 #d2d6d2;transform:rotate(-3deg)}.window-top{display:flex;justify-content:space-between;padding-bottom:12px;border-bottom:1px solid #e0e2e0;font:9px var(--mono);color:#707578}.dots{letter-spacing:3px}.search-box{border:1px solid #dfe1df;margin-top:15px;padding:11px;font:10px var(--mono);color:#7a7d7b}.response{margin-top:9px;background:#eeefed;padding:12px}.response div{height:5px;background:#c4c9c4;margin:7px 0}.response div:nth-child(2){width:85%}.response div:nth-child(3){width:62%}.mock-chart{width:76%;max-width:360px;height:160px;position:relative;background:repeating-linear-gradient(to top,transparent 0,transparent 38px,#d4d7d3 39px,#d4d7d3 40px);border-left:1px solid #c7ccc7;border-bottom:1px solid #c7ccc7}.dot{position:absolute;width:9px;height:9px;border-radius:50%;background:#424a4d;opacity:.8}.dot:nth-child(3n){background:#a4aba6}.dot:nth-child(4n){background:#787d79}.workflow{width:83%;display:flex;align-items:center;gap:8px}.node{min-width:0;flex:1;text-align:center;font:10px var(--mono);padding:18px 7px;border:1px solid #bdc3bf;background:white}.node.main{background:#33383a;color:white;border-color:#33383a}.arrow{color:#777f7b}.ab-compare{display:flex;align-items:center;gap:22px}.discount{width:115px;height:118px;background:#fff;border:1px solid #d6d7d4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}.discount small{font:9px var(--mono);letter-spacing:.08em;color:#757977}.discount strong{font-size:42px;letter-spacing:-.09em;font-weight:550}.vs{font:10px var(--mono);color:#787b79}.rings{position:relative;width:170px;height:170px;border-radius:50%;border:31px solid #4b5451;box-shadow:inset 0 0 0 1px #fff}.rings:after{content:"";position:absolute;inset:-31px;border:31px solid transparent;border-top-color:#b6bcb8;border-right-color:#b6bcb8;transform:rotate(15deg);border-radius:50%}.rings span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:24px;letter-spacing:-.05em;font-weight:600}.project-content{padding:36px 37px 32px;display:flex;flex:1;flex-direction:column;align-items:flex-start}.project-topline{display:flex;width:100%;align-items:center;justify-content:space-between;gap:15px;font:10px var(--mono);letter-spacing:.11em;text-transform:uppercase;color:#7f8485}.project-content h3{font-size:clamp(23px,2.35vw,34px);line-height:1.17;letter-spacing:-.055em;font-weight:560;margin:22px 0 15px}.project-content p{font-size:14px;color:#666b6d;line-height:1.8;margin:0 0 25px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}.tags span{font:10px var(--mono);color:#676c6e;background:#f2f3f1;padding:7px 9px}.project-action{display:inline-flex;gap:18px;align-items:center;justify-content:space-between;margin-top:30px;padding:0 0 8px;border:0;border-bottom:1px solid #aab0ad;background:none;font-size:12px;font-weight:600}.project-action:hover{border-color:var(--ink)}.caption{font:11px/1.7 var(--mono);color:#8a8e8d;margin-top:20px}
+.experience{border-top:1px solid var(--line)}.exp-row{display:grid;grid-template-columns:180px 1fr 45px;gap:24px;padding:30px 0;border-bottom:1px solid var(--line)}.exp-date{font:11px/1.7 var(--mono);color:#797d7c;padding-top:5px}.exp-info h3{font-size:21px;letter-spacing:-.04em;font-weight:600;margin:0 0 7px}.exp-info .company{font-size:13px;color:#555a5b}.exp-info p{max-width:770px;font-size:14px;color:#7a7e7f;line-height:1.8;margin:14px 0 0}.exp-arrow{justify-self:end;font-size:19px;color:#9da2a0}.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:10%}.about-layout .about-title{font-size:clamp(40px,4.5vw,66px);font-weight:550;letter-spacing:-.07em;line-height:1.1;margin:16px 0}.about-copy{padding-top:8px}.about-copy p{color:#64696a;font-size:15px;line-height:1.9;margin:0 0 20px}.about-copy .big{font-size:21px;color:#303436;line-height:1.6;letter-spacing:-.025em}.skills{margin-top:45px}.skill-row{display:grid;grid-template-columns:155px 1fr;gap:15px;padding:18px 0;border-top:1px solid var(--line)}.skill-row b{font:10px/1.7 var(--mono);letter-spacing:.08em;color:#727879;text-transform:uppercase}.skill-row span{font-size:13px;color:#4d5354;line-height:1.8}.contact{padding:110px 0 95px}.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}.contact h2{font-size:clamp(54px,7vw,96px);font-weight:550;letter-spacing:-.09em;line-height:1;margin:22px 0}.contact p{color:#6b7071;max-width:440px;font-size:15px;line-height:1.8}.contact-links{display:flex;gap:28px;flex-wrap:wrap;align-items:center;justify-content:flex-end;padding-bottom:10px}.contact-links a{font-size:14px;border-bottom:1px solid var(--ink);padding-bottom:8px}.contact-card{margin-top:18px;padding:18px 20px;border:1px solid var(--line);background:rgba(255,255,255,.5);max-width:420px}.contact-card-label{font:10px var(--mono);text-transform:uppercase;letter-spacing:.12em;color:#787d80}.contact-card a{display:inline-block;margin-top:10px;font-size:18px;letter-spacing:-.04em;font-weight:560}.contact-hint{font:11px var(--mono);color:#858a8b;margin-top:25px}footer{border-top:1px solid var(--line);padding:27px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;font:11px var(--mono);color:#858a8b}.footer-inner a{color:#35393b}
+dialog{border:1px solid #ddd;background:#fff;color:var(--ink);width:min(740px,calc(100% - 30px));max-height:90vh;padding:0;box-shadow:0 25px 80px #0002}dialog::backdrop{background:#191b1cc2;backdrop-filter:blur(4px)}.dialog-inner{padding:44px clamp(24px,5vw,55px) 48px}.dialog-head{display:flex;justify-content:space-between;align-items:center}.dialog-close{background:transparent;border:1px solid var(--line);height:37px;width:37px;font-size:18px}.dialog-inner h2{font-size:clamp(35px,5vw,55px);line-height:1.1;letter-spacing:-.07em;font-weight:550;margin:30px 0 20px}.dialog-intro{font-size:17px;color:#6b6e70;line-height:1.7}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:38px 0;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.metric strong{display:block;font-size:26px;letter-spacing:-.06em;font-weight:550;margin-bottom:6px}.metric span{display:block;font:10px/1.5 var(--mono);color:#858a89}.dialog-section{margin:25px 0}.dialog-section h3{font-size:15px;margin:0 0 8px}.dialog-section p{font-size:14px;line-height:1.85;color:#686c6d;margin:0}.dialog-end{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);font:12px var(--mono);color:#777}.editor-toggle{position:fixed;right:20px;bottom:20px;z-index:60;background:var(--ink);color:#fff;border:0;padding:12px 16px;border-radius:999px;box-shadow:0 10px 25px rgba(0,0,0,.12);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}.editor-panel{position:fixed;right:20px;bottom:78px;z-index:60;width:min(370px,calc(100vw - 30px));background:#fff;border:1px solid var(--line);box-shadow:0 20px 45px rgba(0,0,0,.12);padding:18px;border-radius:18px}.editor-panel.hidden{display:none}.editor-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}.editor-head strong{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#4a4d50}.editor-close{background:transparent;border:1px solid var(--line);border-radius:8px;width:30px;height:30px}.editor-form{display:grid;gap:12px}.editor-form label{display:grid;gap:6px;font:10px/1.5 var(--mono);letter-spacing:.08em;color:#6e7375;text-transform:uppercase}.editor-form input,.editor-form textarea{border:1px solid #dfe1df;padding:10px 12px;font:14px/1.5 var(--sans);background:#fafaf9;color:var(--ink);border-radius:10px}.editor-form textarea{min-height:90px;resize:vertical}.editor-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}.editor-actions button{border:0;border-radius:999px;padding:10px 16px;font-size:12px;font-weight:600}.editor-actions .save{background:var(--ink);color:#fff}.editor-actions .reset{background:#f1f2f0;color:var(--ink)}
+@media(max-width:900px){.wrap{width:min(100% - 48px,1220px)}.hero{padding-top:100px}.hero-grid{grid-template-columns:1fr;gap:35px}.hero-side{flex-direction:row;justify-content:space-between;gap:28px}.hero-bottom{margin-top:75px}.featured .visual{min-height:320px}.project-content{padding:28px}.exp-row{grid-template-columns:140px 1fr 20px}.about-layout{gap:6%}.skill-row{grid-template-columns:1fr;gap:3px}}
+@media(max-width:650px){.wrap{width:calc(100% - 38px)}header .wrap{height:66px}.nav{display:none;position:absolute;left:0;right:0;top:66px;background:var(--paper);border-bottom:1px solid var(--line);padding:20px;flex-direction:column;align-items:flex-start;gap:20px}.nav.open{display:flex}.mobile-menu{display:block}.hero{padding:85px 0 65px}.hero h1{font-size:clamp(56px,13vw,87px);margin:29px 0}.lead{font-size:17px}.hero-side{display:block}.hero-side .text-link{margin-top:17px}.hero-bottom{margin-top:60px;font-size:9px}.section{padding:76px 0}.section-heading{display:block;margin-bottom:35px}.section-heading p{margin-top:18px}.project-grid{grid-template-columns:1fr}.project.featured{grid-column:span 1;display:flex}.featured .visual{height:250px;min-height:0}.visual{height:230px}.project-content{padding:25px}.project-content h3{font-size:29px}.exp-row{grid-template-columns:1fr 24px;gap:10px;padding:25px 0}.exp-date{grid-column:span 2}.exp-info{grid-column:1}.exp-arrow{grid-column:2;grid-row:2}.about-layout,.contact-layout{grid-template-columns:1fr;gap:26px}.contact-links{justify-content:flex-start}.footer-inner{flex-wrap:wrap}.metrics{grid-template-columns:1fr 1fr}.dialog-inner{padding:28px 22px}.editor-toggle{right:14px;bottom:14px}.editor-panel{right:14px;bottom:74px;left:14px;width:auto}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+/* Refined portfolio system */
+:root{--paper:#fafaf9;--white:#fff;--ink:#171717;--muted:#6b6b68;--line:#e7e7e4;--soft:#f3f3f1;--mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--section-space:clamp(58px,7vw,92px)}
+html{scroll-padding-top:82px}
+body{background:var(--paper);color:var(--ink);font-size:15px;line-height:1.6}
+.wrap{width:min(1160px,calc(100% - 64px))}
+header{background:rgba(250,250,249,.94);border-color:var(--line)}
+header .wrap{height:70px}
+.logo{font-size:18px;letter-spacing:-.055em;font-weight:650}
+.nav{gap:30px}
+.nav a{font-size:13px;color:#555652}
+.nav .nav-contact{font-weight:600}
+.mobile-menu{font-size:18px}
+.hero{background:var(--white);padding:clamp(68px,9vw,108px) 0 42px;border-color:var(--line)}
+.hero-kicker,.kicker{font-size:10px;letter-spacing:.13em;color:#73736f}
+.hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr);gap:clamp(40px,7vw,100px);align-items:center}
+.hero h1{font-size:clamp(48px,7vw,82px);line-height:1.08;letter-spacing:-.052em;font-weight:620;margin:23px 0 12px;max-width:760px;overflow-wrap:anywhere}
+.hero h1>span:first-child{display:none}
+.hero h1 #hero-name{display:inline}
+.hero h1 .outline{display:inline;color:#8b8b86}
+#hero-headline{font-size:clamp(18px,2.4vw,25px);line-height:1.35;letter-spacing:-.025em;font-weight:520;margin:0 0 19px;color:#343431}
+.lead{font-size:16px;line-height:1.75;letter-spacing:0;color:#5e5e5a;max-width:610px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}
+.hero-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 17px;border:1px solid var(--ink);border-radius:5px;font-size:13px;font-weight:580;transition:background .18s,color .18s,border-color .18s}
+.hero-button.primary{background:var(--ink);color:#fff}
+.hero-button:hover{background:#3a3a37;border-color:#3a3a37;color:#fff}
+.hero-button.secondary:hover{background:#f0f0ee;color:var(--ink);border-color:#b9b9b4}
+.hero-side{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:22px;gap:15px}
+.side-label{font-size:10px;letter-spacing:.11em;color:#797974}
+.hero-side p{font-size:13px;line-height:1.7;color:#4f4f4a;margin-top:5px}
+.hero-side .text-link{display:none}
+.hero-bottom{margin-top:57px;padding-top:18px;border-top:1px solid var(--line);font-size:10px;color:#777772}
+.section{padding:var(--section-space) 0;border-color:var(--line)}
+.section-heading{align-items:end;gap:30px;margin-bottom:32px}
+.section-heading h2{font-size:clamp(31px,4vw,46px);line-height:1.15;letter-spacing:-.045em;font-weight:570;margin:11px 0 0}
+.section-heading p{font-size:13px;line-height:1.7;color:#696964;max-width:360px}
+.filters{gap:8px;margin-bottom:20px}
+.filter{border-color:#dcdcd8;padding:8px 12px;border-radius:4px;font-size:12px;color:#555550;transition:background .18s,color .18s,border-color .18s}
+.filter.active,.filter:hover{background:var(--ink);border-color:var(--ink);color:white}
+.project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+.project,.project.featured{grid-column:auto;display:flex;flex-direction:column;background:#fff;border:1px solid #e4e4e0;border-radius:6px;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s}
+.project:hover{transform:translateY(-2px);border-color:#cececa;box-shadow:0 12px 28px rgba(20,20,18,.055)}
+.visual,.featured .visual{height:auto;min-height:0;aspect-ratio:1.85/1;flex:none;background:#f1f1ef}
+.visual.ir{background:#f0f1ef}.visual.seg{background:#f2f3f0}.visual.auto{background:#f1f0ed}.visual.ab{background:#f4f3f0}.visual.spotify{background:#eff1ef}
+.visual .visual-label{top:17px;left:19px;font-size:9px;letter-spacing:.1em;color:#72726d}
+.visual .visual-count{right:18px;bottom:15px;font-size:10px;color:#777772}
+.mock-window{width:64%;padding:13px;background:#fff;border-color:#d6d7d2;box-shadow:9px 9px 0 #e1e2de;transform:rotate(-1.5deg)}
+.window-top{font-size:8px}.search-box{font-size:9px;padding:9px;margin-top:12px}.response{gap:7px;margin-top:12px}.response div{height:5px}
+.mock-chart{inset:23% 12% 18%;border-color:#d4d5d0}
+.dot{width:8px;height:8px;background:#656862}
+.dot:nth-child(3n){background:#a0a29b}.dot:nth-child(4n){background:#3d403b}
+.workflow{gap:9px}.node{min-width:76px;padding:12px 9px;background:#fff;border-color:#d9dad5;font-size:9px;line-height:1.45}.node.main{background:#333530;color:white;border-color:#333530}.arrow{font-size:13px;color:#777872}
+.ab-compare{gap:12px}.discount{width:88px;height:96px;border-color:#d8d9d4;background:#fff}.discount strong{font-size:29px;letter-spacing:-.04em}.discount small{font-size:8px}.vs{font-size:9px}
+.rings{width:125px;height:125px;border-color:#b5b8b0}.rings:before{inset:14px;border-color:#c9cbc5}.rings:after{inset:29px;border-color:#dadbd6}.rings span{font-size:18px}
+.project-content{display:flex;flex:1;flex-direction:column;padding:23px 24px 22px}
+.project-topline{font-size:9px;letter-spacing:.08em;color:#777771}
+.project-client{display:block;margin-top:9px;font-size:11px;color:#5d5d58}
+.project-content h3{font-size:clamp(21px,2.3vw,27px);line-height:1.22;letter-spacing:-.035em;font-weight:570;margin:7px 0 9px;overflow-wrap:anywhere}
+.project-content p{font-size:13px;line-height:1.7;color:#686863;margin:0 0 16px;max-width:560px}
+.tags{gap:6px;margin-top:auto;padding-top:2px}
+.tags span{font-size:10px;padding:5px 8px;border:1px solid #e6e6e2;border-radius:3px;background:#fafaf9;color:#5e5e59}
+.project-action{align-self:flex-start;margin-top:17px;padding:0 0 3px;border:0;border-bottom:1px solid #8a8a84;background:none;color:#252522;font-size:12px;font-weight:600;transition:color .18s,border-color .18s}
+.project-action:hover{color:#777770;border-color:#777770}.project-action span{margin-left:5px}
+.caption{font-size:11px;color:#83837d;margin:19px 0 0}
+.experience{border-top:1px solid var(--line)}
+.exp-row{grid-template-columns:155px minmax(0,1fr) 24px;gap:22px;padding:25px 0}
+.exp-date{font-size:10px;line-height:1.7;color:#777771}
+.exp-info h3{font-size:18px;line-height:1.35;letter-spacing:-.02em;font-weight:590;margin-bottom:5px}
+.exp-info .company{font-size:12px;color:#555550}
+.exp-info p{font-size:13px;line-height:1.7;color:#6b6b66;margin-top:10px}
+.exp-arrow{font-size:16px;color:#85857f}
+.about-layout{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(35px,7vw,90px);align-items:start}
+.about-layout .about-title{font-size:clamp(32px,4vw,45px);line-height:1.15;letter-spacing:-.045em;font-weight:570;margin:12px 0 18px}
+.portrait-placeholder{width:min(100%,290px);aspect-ratio:1.28/1;margin-top:25px;display:grid;place-items:center;border:1px solid #e3e3df;border-radius:5px;background:#f4f4f2;color:#7a7a74;font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.about-copy{padding-top:1px}.about-copy p{font-size:14px;line-height:1.8;color:#60605b;margin:0 0 15px}
+.about-copy .big{font-size:18px;line-height:1.55;letter-spacing:-.015em;color:#292925}
+.skills{margin-top:28px}
+.skill-row{grid-template-columns:150px minmax(0,1fr);gap:16px;padding:15px 0}
+.skill-row b{font-size:9px;letter-spacing:.08em;color:#777771}
+.skill-row span{font-size:12px;line-height:1.7;color:#4f4f4a;overflow-wrap:anywhere}
+.contact{padding:var(--section-space) 0;background:#f4f4f2;border-top:1px solid var(--line)}
+.contact-layout{grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);gap:clamp(30px,7vw,88px);align-items:center}
+.contact h2{font-size:clamp(34px,4.2vw,48px);font-weight:570;letter-spacing:-.045em;line-height:1.15;margin:12px 0}
+.contact p{color:#62625d;max-width:440px;font-size:14px;line-height:1.75;margin:0}
+.contact-links{justify-content:flex-start;padding:0 0 12px}
+.contact-links a{font-size:12px;padding-bottom:3px}
+.contact-card{margin:0;padding:17px 19px;border:1px solid #e0e0dc;border-radius:5px;background:#fff;max-width:none;display:grid;grid-template-columns:74px minmax(0,1fr);gap:9px 13px;align-items:center}
+.contact-card-label{font-size:9px;letter-spacing:.1em;color:#777771}
+.contact-card a{min-width:0;margin:0;font-size:13px;line-height:1.5;letter-spacing:0;font-weight:520;overflow-wrap:anywhere;text-decoration:underline;text-decoration-color:#c7c7c1;text-underline-offset:3px}
+.contact-card a:hover{text-decoration-color:var(--ink)}
+.contact-hint{margin-top:9px!important;font-size:11px!important;color:#777771!important}
+footer{padding:22px 0;background:var(--paper)}
+.footer-inner{font-size:10px;color:#777771}.footer-inner a{color:#353530}
+dialog{border:1px solid #deded9;border-radius:6px;max-height:min(88vh,900px);box-shadow:0 24px 80px rgba(0,0,0,.18)}
+dialog::backdrop{background:rgba(22,22,20,.48);backdrop-filter:blur(3px)}
+.dialog-inner{padding:clamp(25px,5vw,46px)}
+.dialog-close{border-radius:4px}
+.dialog-inner h2{font-size:clamp(30px,4vw,43px);line-height:1.18;letter-spacing:-.04em;font-weight:570;margin:22px 0 14px;overflow-wrap:anywhere}
+.dialog-intro{font-size:15px;line-height:1.7;color:#62625d}
+.metrics{gap:14px;margin:26px 0;padding:18px 0}
+.metric strong{font-size:22px;letter-spacing:-.035em}
+.metric span{font-size:9px;line-height:1.55}
+.dialog-section{margin:20px 0}.dialog-section h3{font-size:14px;font-weight:620}.dialog-section p{font-size:13px;line-height:1.75;color:#62625d}
+.dialog-end{font:11px/1.7 var(--mono);color:#6c6c66}
+.editor-toggle{right:18px;bottom:18px;border-radius:5px;background:#22221f;padding:11px 14px;box-shadow:0 5px 18px rgba(0,0,0,.12);font-size:10px;letter-spacing:.06em}
+.editor-panel{right:18px;bottom:70px;border-radius:6px;max-height:calc(100vh - 90px);overflow:auto}
+.editor-close{border-radius:4px}
+@media(max-width:850px){.wrap{width:min(100% - 48px,1160px)}.hero{padding-top:72px}.hero-grid{grid-template-columns:minmax(0,1fr) minmax(200px,.68fr);gap:28px}.hero h1{font-size:clamp(46px,7.5vw,66px)}.hero-side{padding:17px}.section-heading{align-items:flex-start}.project-content{padding:20px}.exp-row{grid-template-columns:125px minmax(0,1fr) 20px;gap:16px}}
+@media(max-width:650px){.wrap{width:calc(100% - 38px)}header .wrap{height:62px}.nav{top:62px;left:0;right:0;background:#fff;padding:19px 21px;gap:17px;box-shadow:0 10px 20px rgba(0,0,0,.05)}.nav a{font-size:14px}.hero{padding:62px 0 30px}.hero-grid{grid-template-columns:1fr;gap:23px}.hero h1{font-size:clamp(42px,12vw,60px);margin:18px 0 9px;line-height:1.1}.hero h1 #hero-name{overflow-wrap:anywhere}.hero-headline{font-size:19px}.lead{font-size:14px;line-height:1.75}.hero-side{padding:16px}.hero-bottom{margin-top:31px;gap:12px;font-size:9px}.section{padding:58px 0}.section-heading{display:block;margin-bottom:25px}.section-heading h2{font-size:clamp(29px,8vw,38px)}.section-heading p{margin-top:12px;font-size:13px}.filters{margin-bottom:16px}.filter{font-size:11px;padding:7px 9px}.project-grid{grid-template-columns:1fr;gap:13px}.visual,.featured .visual{aspect-ratio:1.65/1}.project-content{padding:19px}.project-content h3{font-size:22px}.project-content p{font-size:12px}.project-client{font-size:10px}.exp-row{grid-template-columns:minmax(0,1fr) 20px;gap:8px 12px;padding:20px 0}.exp-date{grid-column:1/-1}.exp-info{grid-column:1}.exp-arrow{grid-column:2;grid-row:2}.exp-info h3{font-size:16px}.exp-info p{font-size:12px}.about-layout,.contact-layout{grid-template-columns:1fr;gap:24px}.about-layout .about-title{font-size:34px}.portrait-placeholder{width:min(100%,240px);aspect-ratio:1.8/1;margin-top:18px}.about-copy .big{font-size:16px}.skill-row{grid-template-columns:1fr;gap:4px;padding:12px 0}.contact{padding:58px 0}.contact h2{font-size:36px}.contact-layout{gap:20px}.contact-links{padding-bottom:10px}.contact-card{grid-template-columns:65px minmax(0,1fr);padding:15px}.contact-card a{font-size:12px}.footer-inner{gap:12px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.dialog-inner{padding:24px 19px}.dialog-intro{font-size:14px}.dialog-section p{font-size:12px}.editor-toggle{right:12px;bottom:12px}.editor-panel{right:12px;bottom:62px;left:12px;width:auto}}
+@media(max-width:380px){.wrap{width:calc(100% - 30px)}.hero h1{font-size:40px}.hero-button{min-height:42px;padding:0 12px;font-size:12px}.project-content{padding:17px}.contact-card{grid-template-columns:1fr;gap:4px}.contact-card-label:not(:first-child){margin-top:8px}}
+.hero{padding:clamp(42px,5.5vw,68px) 0 24px}
+.hero-grid{grid-template-columns:minmax(0,1fr);gap:0;align-items:start;max-width:860px}
+.hero-side{display:none}
+.hero h1{margin:19px 0 8px}
+#hero-headline{margin-bottom:11px}
+.lead{font-size:clamp(15px,1.3vw,17px);line-height:1.65;color:#454540;max-width:700px}
+.hero-support{max-width:650px;margin:9px 0 0;font-size:14px;line-height:1.7;color:#74746e}
+.hero-bottom{margin-top:20px;padding:0;border:0;justify-content:flex-start;text-transform:none;letter-spacing:0;font:12px/1.5 var(--sans);color:#74746e}
+@media(max-width:650px){.hero{padding:47px 0 22px}.hero-grid{gap:0}.hero h1{margin-top:17px}.hero-bottom{margin-top:17px;font-size:11px}}
+</style>
+<style>
+#preview-site{min-height:100vh}
+#preview-switcher{position:fixed;left:18px;bottom:18px;z-index:75;display:flex;gap:3px;padding:4px;border:1px solid #deded9;border-radius:6px;background:#fff;box-shadow:0 5px 18px rgba(0,0,0,.1)}
+#preview-switcher button{width:40px;height:38px;display:grid;place-items:center;padding:0;border:0;border-radius:4px;background:transparent;color:#54544f;transition:background .16s,color .16s}
+#preview-switcher button:hover{background:#f1f1ef;color:#171717}
+#preview-switcher button[aria-pressed="true"]{background:#22221f;color:#fff}
+#preview-switcher svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+body.preview-mode-mobile{overflow:hidden;background:#e8e8e5}
+body.preview-mode-mobile #preview-site{container-type:inline-size;width:min(390px,calc(100vw - 32px));height:min(844px,calc(100dvh - 112px));min-height:0;margin:58px auto 0;overflow-y:auto;overscroll-behavior:contain;border:5px solid #22221f;border-radius:26px;background:var(--paper);box-shadow:0 12px 40px rgba(0,0,0,.18)}
+body.preview-mode-mobile #preview-switcher{left:50%;bottom:10px;transform:translateX(-50%)}
+body.preview-mode-mobile #preview-site .wrap{width:calc(100% - 38px)}
+body.preview-mode-mobile #preview-site header .wrap{height:62px}
+body.preview-mode-mobile #preview-site .nav{display:none;position:absolute;left:0;right:0;top:62px;z-index:30;background:#fff;border-bottom:1px solid var(--line);padding:19px 21px;flex-direction:column;align-items:flex-start;gap:17px;box-shadow:0 10px 20px rgba(0,0,0,.05)}
+body.preview-mode-mobile #preview-site .nav.open{display:flex}
+body.preview-mode-mobile #preview-site .nav a{font-size:14px}
+body.preview-mode-mobile #preview-site .mobile-menu{display:block}
+body.preview-mode-mobile #preview-site .hero{padding:47px 0 22px}
+body.preview-mode-mobile #preview-site .hero-grid{grid-template-columns:1fr;gap:0}
+body.preview-mode-mobile #preview-site .hero h1{font-size:clamp(42px,12cqw,60px);margin:17px 0 9px;line-height:1.1}
+body.preview-mode-mobile #preview-site #hero-headline{font-size:19px}
+body.preview-mode-mobile #preview-site .lead{font-size:14px;line-height:1.75}
+body.preview-mode-mobile #preview-site .hero-bottom{margin-top:17px;font-size:11px}
+body.preview-mode-mobile #preview-site .section{padding:58px 0}
+body.preview-mode-mobile #preview-site .section-heading{display:block;margin-bottom:25px}
+body.preview-mode-mobile #preview-site .section-heading h2{font-size:clamp(29px,8cqw,38px)}
+body.preview-mode-mobile #preview-site .section-heading p{margin-top:12px;font-size:13px}
+body.preview-mode-mobile #preview-site .filters{gap:7px;margin-bottom:16px}
+body.preview-mode-mobile #preview-site .filter{font-size:11px;padding:7px 9px}
+body.preview-mode-mobile #preview-site .project-grid{grid-template-columns:1fr;gap:13px}
+body.preview-mode-mobile #preview-site .project.featured{grid-column:span 1;display:flex}
+body.preview-mode-mobile #preview-site .visual,body.preview-mode-mobile #preview-site .featured .visual{aspect-ratio:1.65/1}
+body.preview-mode-mobile #preview-site .project-content{padding:19px}
+body.preview-mode-mobile #preview-site .project-content h3{font-size:22px}
+body.preview-mode-mobile #preview-site .project-content p{font-size:12px}
+body.preview-mode-mobile #preview-site .exp-row{grid-template-columns:minmax(0,1fr) 20px;gap:8px 12px;padding:20px 0}
+body.preview-mode-mobile #preview-site .exp-date{grid-column:1/-1}
+body.preview-mode-mobile #preview-site .exp-info{grid-column:1}
+body.preview-mode-mobile #preview-site .exp-arrow{grid-column:2;grid-row:2}
+body.preview-mode-mobile #preview-site .about-layout,body.preview-mode-mobile #preview-site .contact-layout{grid-template-columns:1fr;gap:24px}
+body.preview-mode-mobile #preview-site .skill-row{grid-template-columns:1fr;gap:4px;padding:12px 0}
+body.preview-mode-mobile #preview-site .contact{padding:58px 0}
+body.preview-mode-mobile #preview-site .contact h2{font-size:36px}
+body.preview-mode-mobile #preview-site .contact-card{grid-template-columns:65px minmax(0,1fr);padding:15px}
+body.preview-mode-mobile #preview-site .contact-card a{font-size:12px}
+body.preview-mode-mobile #preview-site .footer-inner{gap:12px}
+body.preview-mode-mobile #preview-site .metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+body.preview-mode-mobile #preview-site .dialog-inner{padding:24px 19px}
+@media(max-width:420px){body.preview-mode-mobile #preview-site{width:calc(100vw - 20px);height:calc(100dvh - 105px);margin-top:52px;border-radius:22px}#preview-switcher{left:50%;bottom:8px;transform:translateX(-50%)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><a class="logo" href="#top" aria-label="Carlyn Weng Home">CW<span>.</span></a><nav class="nav" id="nav" aria-label="Main navigation"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a class="nav-contact" href="#contact">Contact ↗</a></nav><button class="mobile-menu" aria-label="Toggle navigation" aria-expanded="false" id="menu">☰</button></div></header>
+<main id="main"><section class="hero" id="top"><div class="wrap"><div class="hero-kicker" id="hero-kicker">UCSD · Business Economics · Data & AI</div><div class="hero-grid"><div><h1><span>Hi, I'm</span><span id="hero-name">Carlyn Weng<span class="outline">.</span></span></h1><p class="lead" id="hero-lead">I connect business thinking with data and technology to turn complex challenges into practical solutions.</p></div><div class="hero-side"><div><span class="side-label">Currently</span><p id="current-status">Studying Business Economics with a minor in Business Analytics at UC San Diego.</p></div><a href="#work" class="text-link">Explore selected work <span>↗</span></a></div></div><div class="hero-bottom"><span id="location-line">San Diego, California / English + Mandarin</span><a href="#work" class="scroll">Scroll to explore ↓</a></div></div></section>
+<section class="section" id="work"><div class="wrap"><div class="section-heading"><div><div class="kicker">01 / Selected work</div><h2 id="work-heading">Projects & case studies.</h2></div><p id="work-copy">A selection of projects spanning AI applications, data analysis, experimentation, and business strategy.</p></div><div class="filters" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All projects</button><button class="filter" data-filter="ai" aria-pressed="false">AI & Automation</button><button class="filter" data-filter="analytics" aria-pressed="false">Data Analytics</button><button class="filter" data-filter="strategy" aria-pressed="false">Business Strategy</button></div><div class="project-grid">
+<article class="project featured" data-categories="ai strategy"><div class="visual ir"><span class="visual-label">AI / KNOWLEDGE SYSTEMS</span><div class="mock-window"><div class="window-top"><span>IR KNOWLEDGE ASSISTANT</span><span class="dots">•••</span></div><div class="search-box">↗ Ask a question about company reports</div><div class="response"><div></div><div></div><div></div></div></div><span class="visual-count">FIG. 01</span></div><div class="project-content"><div class="project-topline"><span>AI Engineering · Business Intelligence</span><span>01 / 05</span></div><h3>Corporate Investor Relations AI Chatbot</h3><p>Designed a document-grounded AI knowledge assistant using 300+ corporate resources to make investor relations information more accessible.</p><div class="tags"><span>Python</span><span>RAG</span><span>Gemini</span><span>LangChain</span><span>FastAPI</span></div><button class="project-action" data-project="ir" data-link="https://csun-ai-chat-999165736619.asia-east1.run.app/">View case study <span>↗</span></button></div></article>
+<article class="project" data-categories="analytics strategy"><div class="visual seg"><span class="visual-label">SEGMENTATION / DATA</span><div class="mock-chart" aria-hidden="true"><span class="dot" style="left:9%;bottom:25%"></span><span class="dot" style="left:12%;bottom:36%"></span><span class="dot" style="left:19%;bottom:19%"></span><span class="dot" style="left:27%;bottom:33%"></span><span class="dot" style="left:33%;bottom:26%"></span><span class="dot" style="left:22%;bottom:44%"></span><span class="dot" style="left:37%;bottom:51%"></span><span class="dot" style="left:42%;bottom:33%"></span><span class="dot" style="left:48%;bottom:49%"></span><span class="dot" style="left:53%;bottom:42%"></span><span class="dot" style="left:39%;bottom:19%"></span><span class="dot" style="left:50%;bottom:12%"></span><span class="dot" style="left:58%;bottom:25%"></span><span class="dot" style="left:63%;bottom:35%"></span><span class="dot" style="left:66%;bottom:55%"></span><span class="dot" style="left:73%;bottom:47%"></span><span class="dot" style="left:78%;bottom:31%"></span><span class="dot" style="left:81%;bottom:61%"></span><span class="dot" style="left:88%;bottom:70%"></span><span class="dot" style="left:72%;bottom:77%"></span><span class="dot" style="left:58%;bottom:69%"></span><span class="dot" style="left:46%;bottom:74%"></span><span class="dot" style="left:31%;bottom:62%"></span><span class="dot" style="left:20%;bottom:76%"></span><span class="dot" style="left:90%;bottom:48%"></span><span class="dot" style="left:85%;bottom:18%"></span></div><span class="visual-count">FIG. 02</span></div><div class="project-content"><div class="project-topline"><span>Machine Learning · Analytics</span><span>02 / 05</span></div><h3>Customer Retention & Segmentation</h3><p>Analyzed 5,174 fitness club members and developed four behavioral segments with tailored retention strategies.</p><div class="tags"><span>R</span><span>K-means</span><span>Clustering</span><span>Retention</span></div><button class="project-action" data-project="segments">View case study <span>↗</span></button></div></article>
+<article class="project" data-categories="ai"><div class="visual auto"><span class="visual-label">OPERATIONS / AUTOMATION</span><div class="workflow"><div class="node">Manual<br>input</div><div class="arrow">→</div><div class="node main">Python +<br>Selenium</div><div class="arrow">→</div><div class="node">Automated<br>output</div></div><span class="visual-count">FIG. 03</span></div><div class="project-content"><div class="project-topline"><span>Engineering · Automation</span><span>03 / 05</span></div><h3>AI & Workflow Automation</h3><p>Built Python-based automation workflows during my Graphen internship, reducing manual effort by approximately 85–90% across separate initiatives.</p><div class="tags"><span>Python</span><span>Selenium</span><span>JSON</span><span>Automation</span></div><button class="project-action" data-project="automation">View case study <span>↗</span></button></div></article>
+<article class="project" data-categories="analytics strategy"><div class="visual ab"><span class="visual-label">EXPERIMENTAL DESIGN</span><div class="ab-compare"><div class="discount"><small>VARIANT A</small><strong>20%</strong><small>OFF</small></div><span class="vs">VS</span><div class="discount"><small>VARIANT B</small><strong>$5</strong><small>OFF</small></div></div><span class="visual-count">FIG. 04</span></div><div class="project-content"><div class="project-topline"><span>Marketing · Experimentation</span><span>04 / 05</span></div><h3>Discount Framing A/B Test</h3><p>Investigated whether presenting equivalent discounts in percentage versus dollar terms influences consumer choices across roughly 180 participants.</p><div class="tags"><span>A/B Testing</span><span>Statistics</span><span>Marketing</span></div><button class="project-action" data-project="ab">View case study <span>↗</span></button></div></article>
+<article class="project" data-categories="analytics"><div class="visual spotify"><span class="visual-label">CUSTOMER BEHAVIOR</span><div class="rings"><span>50K</span></div><span class="visual-count">FIG. 05</span></div><div class="project-content"><div class="project-topline"><span>Exploratory Analytics</span><span>05 / 05</span></div><h3>Spotify User Churn Exploration</h3><p>Explored a 50,000-row dataset to examine relationships between subscription plans, customer behavior, and churn signals.</p><div class="tags"><span>EDA</span><span>Data Cleaning</span><span>Retention</span></div><button class="project-action" data-project="spotify">View case study <span>↗</span></button></div></article>
+</div><p class="caption"></p></div></section>
+<section class="section" id="experience"><div class="wrap"><div class="section-heading"><div><div class="kicker">02 / Professional experience</div><h2 id="experience-heading">Where I've worked.</h2></div><p id="experience-copy">Hands-on experience across technology, finance, investor relations, and digital marketing.</p></div><div class="experience">
+<div class="exp-row"><div class="exp-date">JUL — SEP 2026</div><div class="exp-info"><h3>IR & Marketing Intern</h3><div class="company">CSUN · Taiwan</div><p>Developed an investor relations AI knowledge assistant and supported investor relations research, marketing operations, and digital initiatives.</p></div><div class="exp-arrow">↗</div></div>
+<div class="exp-row"><div class="exp-date">JUL — AUG 2025</div><div class="exp-info"><h3>Data & Algorithm AI Intern</h3><div class="company">Graphen Inc. Asia · Taipei, Taiwan</div><p>Developed Python and Selenium automation tools, optimized repetitive data workflows, and supported technical AI operations.</p></div><div class="exp-arrow">↗</div></div>
+<div class="exp-row"><div class="exp-date">2026 — PRESENT</div><div class="exp-info"><h3>Finance Lead</h3><div class="company">SCC · UC San Diego</div><p>Lead financial tracking and operational coordination, including membership dues, purchases, funding, and finance communications.</p></div><div class="exp-arrow">↗</div></div>
+<div class="exp-row"><div class="exp-date">JUL — AUG 2023</div><div class="exp-info"><h3>Editorial & Marketing Intern</h3><div class="company">Good You Digital · Taipei, Taiwan</div><p>Produced over 100 articles and contributed to search-engine optimization, bilingual content production, and digital marketing.</p></div><div class="exp-arrow">↗</div></div>
+</div></div></section>
+<section class="section" id="about"><div class="wrap"><div class="about-layout"><div><div class="kicker">03 / About me</div><h2 class="about-title" id="about-title">Analytical thinking.<br>Practical impact.</h2></div><div class="about-copy"><p class="big" id="about-lead">I enjoy working where business, data, and emerging technology meet.</p><p id="about-copy-one">I'm studying Business Economics at UC San Diego, with a minor in Business Analytics. My experiences range from building AI tools to uncovering customer insights and developing recommendations that help organizations make better decisions.</p><p id="about-copy-two">I'm especially interested in translating ambiguous problems into structured, measurable solutions.</p><div class="skills"><div class="skill-row"><b>Programming & data</b><span id="skill-data">Python · R · SQL · Stata · Excel · pandas · ggplot2</span></div><div class="skill-row"><b>AI & automation</b><span id="skill-ai">RAG · LangChain · Chroma · Gemini · FastAPI · Selenium</span></div><div class="skill-row"><b>Business analytics</b><span id="skill-business">Regression · A/B Testing · Monte Carlo Analysis · Customer Segmentation · Marketing Analytics · Investor Relations</span></div><div class="skill-row"><b>Languages</b><span id="skill-languages">English · Mandarin Chinese</span></div></div></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-layout"><div><div class="kicker">04 / Get in touch</div><h2 id="contact-heading">Let's connect.</h2><p id="contact-copy">I'm interested in opportunities that bring together analytics, emerging technology, and business problem-solving.</p></div><div><div class="contact-links"><a id="resume-link" href="#contact">Resume ↗</a></div><div class="contact-card"><div class="contact-card-label">LinkedIn</div><a id="contact-link-display" href="https://www.linkedin.com/in/carlyn-weng" target="_blank" rel="noopener noreferrer">linkedin.com/in/carlyn-weng</a><div class="contact-card-label">Email</div><a id="contact-email-display" href="mailto:caweng@ucsd.edu">caweng@ucsd.edu</a></div><p class="contact-hint" id="contact-hint"></p></div></div></div></section></main>
+<button id="editor-toggle" class="editor-toggle" type="button">Edit portfolio</button>
+<aside id="editor-panel" class="editor-panel hidden" aria-live="polite"><div class="editor-head"><strong>Portfolio editor</strong><button id="editor-close" class="editor-close" type="button" aria-label="Close editor">×</button></div><form id="portfolio-editor" class="editor-form"><label>Full name<input id="field-name" name="name" type="text"></label><label>Hero kicker<input id="field-kicker" name="kicker" type="text"></label><label>Intro text<textarea id="field-lead" name="lead"></textarea></label><label>Current status<textarea id="field-status" name="status"></textarea></label><label>Location line<input id="field-location" name="location" type="text"></label><label>Work heading<input id="field-work-heading" name="workHeading" type="text"></label><label>Work copy<textarea id="field-work-copy" name="workCopy"></textarea></label><label>Experience heading<input id="field-experience-heading" name="experienceHeading" type="text"></label><label>Experience copy<textarea id="field-experience-copy" name="experienceCopy"></textarea></label><label>About title<textarea id="field-about-title" name="aboutTitle"></textarea></label><label>About lead<textarea id="field-about-lead" name="aboutLead"></textarea></label><label>About body 1<textarea id="field-about-one" name="aboutOne"></textarea></label><label>About body 2<textarea id="field-about-two" name="aboutTwo"></textarea></label><label>Skills: data<textarea id="field-skill-data" name="skillData"></textarea></label><label>Skills: AI<textarea id="field-skill-ai" name="skillAi"></textarea></label><label>Skills: business<textarea id="field-skill-business" name="skillBusiness"></textarea></label><label>Skills: languages<textarea id="field-skill-languages" name="skillLanguages"></textarea></label><label>Email<input id="field-email" name="email" type="email"></label><label>LinkedIn URL<input id="field-linkedin" name="linkedin" type="url"></label><label>Resume PDF<input id="field-resume" name="resume" type="text" placeholder="resume.pdf or /path/to/file.pdf"></label><label>Contact heading<input id="field-contact-heading" name="contactHeading" type="text"></label><label>Contact copy<textarea id="field-contact-copy" name="contactCopy"></textarea></label><div class="editor-actions"><button class="save" type="submit">Save</button><button class="reset" type="button" id="editor-reset">Reset</button></div></form></aside>
+<footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Carlyn Weng</span><span></span><a href="#top">Back to top ↑</a></div></footer>
+<dialog id="case-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><div class="dialog-head"><span id="dialog-category" class="kicker">Case study</span><button id="dialog-close" class="dialog-close" aria-label="Close case study">×</button></div><h2 id="dialog-title"></h2><p id="dialog-intro" class="dialog-intro"></p><div class="metrics" id="dialog-metrics"></div><div id="dialog-sections"></div><div class="dialog-end" id="dialog-end-content">Have questions about this project? <a href="#contact" id="case-contact" style="color:#202425;text-decoration:underline">Get in touch ↗</a></div></div></dialog>
+<script>
+const STORAGE_KEY='portfolio-editor-config-v1';
+const DEFAULT_PROFILE={
+  name:'Carlyn Weng',
+  kicker:'Business · Data · Technology',
+  headline:'Business Analytics × AI × Strategy',
+  lead:'Business Economics student at UC San Diego, minoring in Business Analytics.',
+  status:'I connect business thinking with data and technology to turn complex challenges into practical solutions.',
+  location:'San Diego, California / English + Mandarin',
+  workHeading:'Projects & case studies.',
+  workCopy:'A selection of projects spanning AI applications, data analysis, experimentation, and business strategy.',
+  experienceHeading:"Where I've worked.",
+  experienceCopy:'Hands-on experience across technology, finance, investor relations, and digital marketing.',
+  aboutTitle:'Analytical thinking.<br>Practical impact.',
+  aboutLead:'I enjoy working where business, data, and emerging technology meet.',
+  aboutOne:"I'm studying Business Economics at UC San Diego, with a minor in Business Analytics. My experiences range from building AI tools to uncovering customer insights and developing recommendations that help organizations make better decisions.",
+  aboutTwo:"I'm especially interested in translating ambiguous problems into structured, measurable solutions.",
+  skillData:'Python · R · SQL · Stata · Excel · pandas · ggplot2',
+  skillAi:'RAG · LangChain · Chroma · Gemini · FastAPI · Selenium',
+  skillBusiness:'Regression · A/B Testing · Monte Carlo Analysis · Customer Segmentation · Marketing Analytics · Investor Relations',
+  skillLanguages:'English · Mandarin Chinese',
+  email:'caweng@ucsd.edu',
+  linkedin:'https://www.linkedin.com/in/carlyn-weng',
+  resume:'https://drive.google.com/file/d/1ZPVV5FnvdLc5hyn8A21cet6t01eRN2lM/view?usp=sharing',
+  contactHeading:"Let's connect.",
+  contactCopy:"I'm interested in opportunities that bring together analytics, emerging technology, and business problem-solving."
+};
+const PROFILE={...DEFAULT_PROFILE, ...JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}')};
+if(!PROFILE.resume)PROFILE.resume=DEFAULT_PROFILE.resume;
+if(PROFILE.kicker==='UCSD · Business Economics · Data & AI')PROFILE.kicker=DEFAULT_PROFILE.kicker;
+if(PROFILE.lead==='I connect business thinking with data and technology to turn complex challenges into practical solutions.'||PROFILE.lead==='I’m a UC San Diego Business Economics student focused on Business Analytics, AI automation, and practical business problem-solving.')PROFILE.lead=DEFAULT_PROFILE.lead;
+if(PROFILE.status==='Studying Business Economics with a minor in Business Analytics at UC San Diego.')PROFILE.status=DEFAULT_PROFILE.status;
+
+function prepareRedesign(){
+  const heroHeading=document.querySelector('.hero h1');
+  const lead=document.getElementById('hero-lead');
+  const heroText=document.querySelector('.hero-grid > div:first-child');
+  const status=document.getElementById('current-status');
+  if(heroText&&status){status.classList.add('hero-support');heroText.append(status);}
+  document.querySelector('.hero-side')?.remove();
+  document.querySelector('.hero-bottom .scroll')?.remove();
+  if(heroHeading&&!document.getElementById('hero-headline')){
+    const headline=document.createElement('h2');
+    headline.id='hero-headline';
+    headline.textContent=PROFILE.headline;
+    heroHeading.insertAdjacentElement('afterend',headline);
+  }
+  if(!document.getElementById('field-headline')){
+    const kickerField=document.getElementById('field-kicker')?.closest('label');
+    if(kickerField){
+      const label=document.createElement('label');
+      label.textContent='Professional headline';
+      const input=document.createElement('input');
+      input.id='field-headline';
+      input.name='headline';
+      input.type='text';
+      label.append(input);
+      kickerField.insertAdjacentElement('afterend',label);
+    }
+  }
+  if(lead&&!document.querySelector('.hero-ctas')){
+    const actions=document.createElement('div');
+    actions.className='hero-ctas';
+    actions.innerHTML='<a class="hero-button primary" href="#work">Explore My Work</a><a class="hero-button secondary" href="#contact">Get in Touch</a>';
+    lead.insertAdjacentElement('afterend',actions);
+  }
+  const aboutIntro=document.querySelector('.about-layout > div:first-child');
+  if(aboutIntro&&!aboutIntro.querySelector('.portrait-placeholder')){
+    const portrait=document.createElement('div');
+    portrait.className='portrait-placeholder';
+    portrait.setAttribute('role','img');
+    portrait.setAttribute('aria-label','Space reserved for a professional headshot');
+    portrait.textContent='Professional Headshot';
+    aboutIntro.append(portrait);
+  }
+  const projectDetails=[
+    ['ir','Corporate Investor Relations AI Chatbot','CSUN'],
+    ['segments','Customer Retention & Segmentation','Coastline Athletic Club'],
+    ['automation','AI & Workflow Automation','Graphen Inc.'],
+    ['ab','Marketing A/B Testing','Marketing experiment'],
+    ['spotify','Spotify Customer Churn Analysis','Spotify dataset']
+  ];
+  projectDetails.forEach(([id,name,client])=>{
+    const button=document.querySelector(`[data-project="${id}"]`);
+    const card=button?.closest('.project');
+    if(!card)return;
+    const heading=card.querySelector('h3');
+    if(heading)heading.textContent=name;
+    const topLine=card.querySelector('.project-topline');
+    if(topLine&&!card.querySelector('.project-client')){
+      const clientLabel=document.createElement('span');
+      clientLabel.className='project-client';
+      clientLabel.textContent=client;
+      topLine.insertAdjacentElement('afterend',clientLabel);
+    }
+    button.setAttribute('aria-haspopup','dialog');
+    button.setAttribute('aria-label',`View case study: ${name}`);
+  });
+}
+
+function syncProfileLinks(){
+  const linkedInDisplay=document.getElementById('contact-link-display');
+  if(linkedInDisplay){
+    if(PROFILE.linkedin){
+      linkedInDisplay.href=PROFILE.linkedin;
+      linkedInDisplay.target='_blank';
+      linkedInDisplay.rel='noopener noreferrer';
+      linkedInDisplay.textContent=PROFILE.linkedin.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+    }
+    else{linkedInDisplay.href='#contact';linkedInDisplay.removeAttribute('target');linkedInDisplay.removeAttribute('rel');linkedInDisplay.textContent='LinkedIn not provided';}
+  }
+  const emailDisplay=document.getElementById('contact-email-display');
+  if(emailDisplay){
+    if(PROFILE.email){emailDisplay.href=`mailto:${PROFILE.email}`;emailDisplay.textContent=PROFILE.email;}
+    else{emailDisplay.href='#contact';emailDisplay.textContent='Email not provided';}
+  }
+  const resumeLink=document.getElementById('resume-link');
+  if(resumeLink){
+    if(PROFILE.resume){
+      resumeLink.href=PROFILE.resume;
+      resumeLink.target='_blank';
+      resumeLink.rel='noopener noreferrer';
+      if(PROFILE.resume.toLowerCase().endsWith('.pdf')){resumeLink.setAttribute('download', 'resume.pdf');}
+    }
+    else{resumeLink.href='#contact';resumeLink.removeAttribute('target');resumeLink.removeAttribute('rel');resumeLink.removeAttribute('download');}
+  }
+}
+
+function applyProfileToDOM(){
+  const headline=document.getElementById('hero-headline');
+  if(headline){headline.textContent=PROFILE.headline;}
+  const nameNode=document.getElementById('hero-name');
+  if(nameNode){nameNode.innerHTML=`${PROFILE.name}<span class="outline">.</span>`;}
+  const kicker=document.getElementById('hero-kicker');
+  if(kicker){kicker.textContent=PROFILE.kicker;}
+  const lead=document.getElementById('hero-lead');
+  if(lead){lead.textContent=PROFILE.lead;}
+  const status=document.getElementById('current-status');
+  if(status){status.textContent=PROFILE.status;}
+  const locationLine=document.getElementById('location-line');
+  if(locationLine){locationLine.textContent=PROFILE.location;}
+  const workHeading=document.getElementById('work-heading');
+  if(workHeading){workHeading.textContent=PROFILE.workHeading;}
+  const workCopy=document.getElementById('work-copy');
+  if(workCopy){workCopy.textContent=PROFILE.workCopy;}
+  const experienceHeading=document.getElementById('experience-heading');
+  if(experienceHeading){experienceHeading.textContent=PROFILE.experienceHeading;}
+  const experienceCopy=document.getElementById('experience-copy');
+  if(experienceCopy){experienceCopy.textContent=PROFILE.experienceCopy;}
+  const aboutTitle=document.getElementById('about-title');
+  if(aboutTitle){aboutTitle.innerHTML=PROFILE.aboutTitle;}
+  const aboutLead=document.getElementById('about-lead');
+  if(aboutLead){aboutLead.textContent=PROFILE.aboutLead;}
+  const aboutOne=document.getElementById('about-copy-one');
+  if(aboutOne){aboutOne.textContent=PROFILE.aboutOne;}
+  const aboutTwo=document.getElementById('about-copy-two');
+  if(aboutTwo){aboutTwo.textContent=PROFILE.aboutTwo;}
+  const skillData=document.getElementById('skill-data');
+  if(skillData){skillData.textContent=PROFILE.skillData;}
+  const skillAi=document.getElementById('skill-ai');
+  if(skillAi){skillAi.textContent=PROFILE.skillAi;}
+  const skillBusiness=document.getElementById('skill-business');
+  if(skillBusiness){skillBusiness.textContent=PROFILE.skillBusiness;}
+  const skillLanguages=document.getElementById('skill-languages');
+  if(skillLanguages){skillLanguages.textContent=PROFILE.skillLanguages;}
+  const contactHeading=document.getElementById('contact-heading');
+  if(contactHeading){contactHeading.textContent=PROFILE.contactHeading;}
+  const contactCopy=document.getElementById('contact-copy');
+  if(contactCopy){contactCopy.textContent=PROFILE.contactCopy;}
+  const nameInFooter=document.querySelector('.footer-inner span');
+  if(nameInFooter){nameInFooter.innerHTML='© <span id="year">2026</span> '+PROFILE.name;}
+  const fieldMap={
+    name:document.getElementById('field-name'),
+    kicker:document.getElementById('field-kicker'),
+    headline:document.getElementById('field-headline'),
+    lead:document.getElementById('field-lead'),
+    status:document.getElementById('field-status'),
+    location:document.getElementById('field-location'),
+    workHeading:document.getElementById('field-work-heading'),
+    workCopy:document.getElementById('field-work-copy'),
+    experienceHeading:document.getElementById('field-experience-heading'),
+    experienceCopy:document.getElementById('field-experience-copy'),
+    aboutTitle:document.getElementById('field-about-title'),
+    aboutLead:document.getElementById('field-about-lead'),
+    aboutOne:document.getElementById('field-about-one'),
+    aboutTwo:document.getElementById('field-about-two'),
+    skillData:document.getElementById('field-skill-data'),
+    skillAi:document.getElementById('field-skill-ai'),
+    skillBusiness:document.getElementById('field-skill-business'),
+    skillLanguages:document.getElementById('field-skill-languages'),
+    email:document.getElementById('field-email'),
+    linkedin:document.getElementById('field-linkedin'),
+    resume:document.getElementById('field-resume'),
+    contactHeading:document.getElementById('field-contact-heading'),
+    contactCopy:document.getElementById('field-contact-copy')
+  };
+  Object.entries(fieldMap).forEach(([key,element])=>{if(element){element.value=PROFILE[key]||'';}});
+  syncProfileLinks();
+}
+
+function saveProfile(){
+  Object.assign(PROFILE, {
+    name:document.getElementById('field-name').value.trim() || DEFAULT_PROFILE.name,
+    kicker:document.getElementById('field-kicker').value.trim() || DEFAULT_PROFILE.kicker,
+    headline:document.getElementById('field-headline').value.trim() || DEFAULT_PROFILE.headline,
+    lead:document.getElementById('field-lead').value.trim() || DEFAULT_PROFILE.lead,
+    status:document.getElementById('field-status').value.trim() || DEFAULT_PROFILE.status,
+    location:document.getElementById('field-location').value.trim() || DEFAULT_PROFILE.location,
+    workHeading:document.getElementById('field-work-heading').value.trim() || DEFAULT_PROFILE.workHeading,
+    workCopy:document.getElementById('field-work-copy').value.trim() || DEFAULT_PROFILE.workCopy,
+    experienceHeading:document.getElementById('field-experience-heading').value.trim() || DEFAULT_PROFILE.experienceHeading,
+    experienceCopy:document.getElementById('field-experience-copy').value.trim() || DEFAULT_PROFILE.experienceCopy,
+    aboutTitle:document.getElementById('field-about-title').value.trim() || DEFAULT_PROFILE.aboutTitle,
+    aboutLead:document.getElementById('field-about-lead').value.trim() || DEFAULT_PROFILE.aboutLead,
+    aboutOne:document.getElementById('field-about-one').value.trim() || DEFAULT_PROFILE.aboutOne,
+    aboutTwo:document.getElementById('field-about-two').value.trim() || DEFAULT_PROFILE.aboutTwo,
+    skillData:document.getElementById('field-skill-data').value.trim() || DEFAULT_PROFILE.skillData,
+    skillAi:document.getElementById('field-skill-ai').value.trim() || DEFAULT_PROFILE.skillAi,
+    skillBusiness:document.getElementById('field-skill-business').value.trim() || DEFAULT_PROFILE.skillBusiness,
+    skillLanguages:document.getElementById('field-skill-languages').value.trim() || DEFAULT_PROFILE.skillLanguages,
+    email:document.getElementById('field-email').value.trim(),
+    linkedin:document.getElementById('field-linkedin').value.trim(),
+    resume:document.getElementById('field-resume').value.trim(),
+    contactHeading:document.getElementById('field-contact-heading').value.trim() || DEFAULT_PROFILE.contactHeading,
+    contactCopy:document.getElementById('field-contact-copy').value.trim() || DEFAULT_PROFILE.contactCopy
+  });
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(PROFILE));
+  applyProfileToDOM();
+}
+
+function resetProfile(){
+  localStorage.removeItem(STORAGE_KEY);
+  Object.assign(PROFILE, DEFAULT_PROFILE);
+  applyProfileToDOM();
+  document.getElementById('portfolio-editor').reset();
+}
+
+prepareRedesign();
+applyProfileToDOM();
+
+const projects = {
+  ir: {
+    category: 'AI ENGINEERING / BUSINESS INTELLIGENCE',
+    title: 'Corporate Investor Relations AI Chatbot',
+    intro: 'An AI-powered information assistant designed to help users navigate a large collection of corporate documents with grounded, retrievable responses.',
+    metrics: [['300+', 'Documents in knowledge base'], ['RAG', 'Retrieval-based architecture'], ['2026', 'CSUN internship']],
+    sections: [
+      ['The challenge', 'Investor relations information is distributed across annual reports, ESG materials, earnings documents, news, and other sources. Finding relevant material quickly can require searching multiple documents.'],
+      ['My approach', 'I organized a corporate knowledge base, implemented retrieval with Chroma and LangChain, integrated a Gemini model, and built the service around a Python/FastAPI workflow. The assistant was designed to answer using relevant documents rather than relying on model memory alone.'],
+      ['How I approached reliability', 'My workflow emphasized source-grounded responses, clear boundaries for unsupported answers, and avoiding personalized stock advice. The project also required handling changing corporate information and keeping material organized.'],
+      ['What I learned', 'The quality of an AI product depends not only on the model but also on document structure, retrieval design, testing, and a clear definition of what the system should and should not answer.'],
+      ['Portfolio demo note', 'The underlying documents and corporate implementation are not provided here. ']
+    ]
+  },
+  segments: {
+    category: 'CUSTOMER ANALYTICS / MACHINE LEARNING',
+    title: 'Customer Retention & Segmentation',
+    intro: 'Used behavior-based segmentation to translate member activity patterns into targeted retention opportunities for a fitness club.',
+    metrics: [['5,174', 'Member records analyzed'], ['4', 'Customer clusters'], ['0.325', 'Silhouette score for k = 4']],
+    sections: [
+      ['Business question', 'Which groups of members behave differently, and where should the club focus retention resources?'],
+      ['Method', 'I explored agreement types and member activity, selected relevant behavioral variables, applied log transformation and standardization, and compared K-means solutions across multiple values of k.'],
+      ['Why four segments?', 'The four-cluster solution produced a silhouette score of approximately 0.325, compared with 0.317 for k = 2 and 0.263 for k = 3. The four segments also offered more meaningful profiles for business action.'],
+      ['Key findings', 'The segments were Lower-Spending Regulars, Highly Engaged Members, Declining Engagement Members, and Digital-Oriented Members. The declining-engagement group was concentrated in monthly agreements, while highly engaged members showed greater visit frequency and longer tenure.'],
+      ['Recommendations', 'For declining-engagement members, I proposed testing access and engagement initiatives such as shuttle support, fitness assessments, and coaching trials. For highly engaged members, I suggested exploring loyalty benefits, a premium space, and price guarantees. These are proposals, not proven causal interventions.'],
+      ['Tools', 'R, dplyr, ggplot2, tidyr, clustering and silhouette analysis.']
+    ]
+  },
+  automation: {
+    category: 'PYTHON / PROCESS AUTOMATION',
+    title: 'AI & Workflow Automation',
+    intro: 'Built technical workflows during my Graphen internship to reduce repetitive manual work and support more reliable operational processes.',
+    metrics: [['~90%', 'Reported manual-work reduction in Python workflow'], ['~85%', 'Reported manual-effort reduction in Selenium Q&A workflow'], ['Python', 'Primary implementation language']],
+    sections: [
+      ['The challenge', 'Repetitive technical tasks consumed time and increased the risk of inconsistent manual execution.'],
+      ['My approach', 'I developed a Python-based server workflow and separate Selenium-driven Q&A automation, working with structured JSON conversion and operational deployment needs.'],
+      ['Results', 'The projects were associated with approximately 90% and 85% reductions in manual work, respectively. These figures refer to different workflows and should not be combined into one overall efficiency metric.'],
+      ['Engineering lessons', 'Automation must be repeatable, maintainable, and testable. I learned to think through input formats, unexpected page behavior, validation, and troubleshooting rather than merely scripting the happy path.'],
+      ['Confidentiality note', 'Production code and company data are not displayed. A public technical walkthrough could recreate the same architecture with a synthetic test environment.']
+    ]
+  },
+  ab: {
+    category: 'EXPERIMENTAL DESIGN / MARKETING',
+    title: 'Marketing A/B Testing',
+    intro: 'Investigated how equivalent promotional framing can influence consumers’ behavior and intentions.',
+    metrics: [['~180', 'Study participants'], ['20%', 'Discount framing A'], ['$5', 'Discount framing B on a $25 item']],
+    sections: [
+      ['Research question', 'Does a “20% off” offer generate a different consumer response from “$5 off” when both represent the same discount on a $25 item?'],
+      ['Experimental design', 'I worked on a comparative experiment with approximately 180 participants, examining outcomes related to clicking and willingness to purchase and exploring differences across participant subgroups.'],
+      ['Analysis', 'The project involved statistical hypothesis testing and considering potential heterogeneity in responses by factors such as shopping frequency and price sensitivity.'],
+      ['Interpretation', 'A clean portfolio case study should separately report the statistical results for each outcome, confidence intervals, and limitations. The final result estimates are intentionally omitted here until confirmed against the original analysis.'],
+      ['Business relevance', 'Promotional messaging is a low-cost lever to test. Randomized experiments can help marketing teams move from preference-based decisions toward evidence-based campaign design.']
+    ]
+  },
+  spotify: {
+    category: 'CUSTOMER ANALYTICS / EXPLORATION',
+    title: 'Spotify Customer Churn Analysis',
+    intro: 'Explored patterns in user behavior and subscription plans using a dataset of 50,000 rows to understand possible churn-related signals.',
+    metrics: [['50,000', 'Rows in dataset'], ['Churn', 'Analytical focus'], ['EDA', 'Exploratory analysis']],
+    sections: [
+      ['The question', 'Which listening or subscription behaviors appear associated with customer churn?'],
+      ['Approach', 'The dataset supports exploration of engagement patterns, plan types, and churn-related outcomes through cleaning, grouping, and data visualization.'],
+      ['What the portfolio should demonstrate', 'An effective finished case study would document missing data treatment, descriptive patterns, potential confounding variables, and practical retention hypotheses.'],
+    ]
+  }
+};
+const dialog=document.getElementById('case-dialog');
+const title=document.getElementById('dialog-title'),intro=document.getElementById('dialog-intro'),metrics=document.getElementById('dialog-metrics'),sections=document.getElementById('dialog-sections');
+document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{const link=button.dataset.link;const p=projects[button.dataset.project];if(!p)return;document.getElementById('dialog-category').textContent=p.category;title.textContent=p.title;intro.textContent=p.intro;metrics.replaceChildren();p.metrics.forEach(([value,label])=>{const el=document.createElement('div');el.className='metric';const strong=document.createElement('strong');strong.textContent=value;const span=document.createElement('span');span.textContent=label;el.append(strong,span);metrics.append(el)});sections.replaceChildren();p.sections.forEach(([name,body])=>{const el=document.createElement('section');el.className='dialog-section';const h=document.createElement('h3');h.textContent=name;const para=document.createElement('p');para.textContent=body;el.append(h,para);sections.append(el)});const footer=document.getElementById('dialog-end-content');footer.replaceChildren();const contactText=document.createTextNode('Have questions about this project? ');const contactLink=document.createElement('a');contactLink.href='#contact';contactLink.id='case-contact';contactLink.style.color='#202425';contactLink.style.textDecoration='underline';contactLink.textContent='Get in touch ↗';contactLink.addEventListener('click',()=>dialog.close());if(link){const liveLink=document.createElement('a');liveLink.href=link;liveLink.target='_blank';liveLink.rel='noopener noreferrer';liveLink.style.display='inline-block';liveLink.style.marginTop='12px';liveLink.style.color='#202425';liveLink.style.textDecoration='underline';liveLink.textContent='View this project ↗';footer.append(contactText,contactLink,document.createElement('br'),liveLink);}else{footer.append(contactText,contactLink);}dialog.showModal()}));
+document.getElementById('dialog-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});document.getElementById('case-contact').addEventListener('click',()=>dialog.close());
+document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});button.classList.add('active');button.setAttribute('aria-pressed','true');const f=button.dataset.filter;document.querySelectorAll('.project').forEach(card=>{card.hidden=f!=='all'&&!card.dataset.categories.split(' ').includes(f)})}));
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+const contacts=[['resume-link',PROFILE.resume]];contacts.forEach(([id,url])=>{const a=document.getElementById(id);if(url){a.href=url;if(url.startsWith('http')){a.target='_blank';a.rel='noopener noreferrer'}}else{a.addEventListener('click',e=>{e.preventDefault();const hint=document.getElementById('contact-hint');if(hint){hint.textContent='Resume link coming soon — add your PDF link in the profile editor.';hint.setAttribute('tabindex','-1');hint.focus();}})}});document.getElementById('year').textContent=String(new Date().getFullYear());
+
+document.getElementById('portfolio-editor').addEventListener('submit',e=>{e.preventDefault();saveProfile();});
+document.getElementById('editor-toggle').addEventListener('click',()=>{document.getElementById('editor-panel').classList.toggle('hidden');});
+document.getElementById('editor-close').addEventListener('click',()=>document.getElementById('editor-panel').classList.add('hidden'));
+document.getElementById('editor-reset').addEventListener('click',()=>{resetProfile();document.getElementById('editor-panel').classList.add('hidden');});
+
+function setupPreviewSwitcher(){
+  const scriptElement=document.currentScript;
+  const previewSite=document.createElement('div');
+  previewSite.id='preview-site';
+  document.body.insertBefore(previewSite,document.body.firstChild);
+  Array.from(document.body.children).forEach(element=>{
+    if(element!==previewSite&&element!==scriptElement)previewSite.append(element);
+  });
+  const switcher=document.createElement('div');
+  switcher.id='preview-switcher';
+  switcher.setAttribute('role','group');
+  switcher.setAttribute('aria-label','Preview size');
+  switcher.innerHTML='<button type="button" data-preview="desktop" aria-label="Desktop preview" aria-pressed="true" title="Desktop preview"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="13" rx="1.5"></rect><path d="M2 20h20l-1.5-2.5h-17L2 20Z"></path></svg></button><button type="button" data-preview="mobile" aria-label="Mobile preview" aria-pressed="false" title="Mobile preview"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><path d="M10.5 18.5h3"></path></svg></button>';
+  document.body.insertBefore(switcher,scriptElement);
+  switcher.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{
+    const mobile=button.dataset.preview==='mobile';
+    if(mobile&&location.hash)history.replaceState(null,'',location.pathname+location.search);
+    document.body.classList.toggle('preview-mode-mobile',mobile);
+    switcher.querySelectorAll('button').forEach(option=>option.setAttribute('aria-pressed',String(option===button)));
+    previewSite.scrollTop=0;
+    window.scrollTo(0,0);
+  }));
+}
+setupPreviewSwitcher();
+</script>
+</body></html>
