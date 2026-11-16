@@ -90,7 +90,7 @@ header .wrap{height:70px}
 .exp-arrow{font-size:16px;color:#85857f}
 .about-layout{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(35px,7vw,90px);align-items:start}
 .about-layout .about-title{font-size:clamp(32px,4vw,45px);line-height:1.15;letter-spacing:-.045em;font-weight:570;margin:12px 0 18px}
-.portrait-placeholder{width:min(100%,290px);aspect-ratio:1.28/1;margin-top:25px;display:grid;place-items:center;border:1px solid #e3e3df;border-radius:5px;background:#f4f4f2;color:#7a7a74;font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.portrait-placeholder{display:block;width:min(100%,290px);height:auto;margin-top:25px;border:1px solid #e3e3df;border-radius:5px}
 .about-copy{padding-top:1px}.about-copy p{font-size:14px;line-height:1.8;color:#60605b;margin:0 0 15px}
 .about-copy .big{font-size:18px;line-height:1.55;letter-spacing:-.015em;color:#292925}
 .skills{margin-top:28px}
@@ -125,7 +125,7 @@ dialog::backdrop{background:rgba(22,22,20,.48);backdrop-filter:blur(3px)}
 .editor-panel{right:18px;bottom:70px;border-radius:6px;max-height:calc(100vh - 90px);overflow:auto}
 .editor-close{border-radius:4px}
 @media(max-width:850px){.wrap{width:min(100% - 48px,1160px)}.hero{padding-top:72px}.hero-grid{grid-template-columns:minmax(0,1fr) minmax(200px,.68fr);gap:28px}.hero h1{font-size:clamp(46px,7.5vw,66px)}.hero-side{padding:17px}.section-heading{align-items:flex-start}.project-content{padding:20px}.exp-row{grid-template-columns:125px minmax(0,1fr) 20px;gap:16px}}
-@media(max-width:650px){.wrap{width:calc(100% - 38px)}header .wrap{height:62px}.nav{top:62px;left:0;right:0;background:#fff;padding:19px 21px;gap:17px;box-shadow:0 10px 20px rgba(0,0,0,.05)}.nav a{font-size:14px}.hero{padding:62px 0 30px}.hero-grid{grid-template-columns:1fr;gap:23px}.hero h1{font-size:clamp(42px,12vw,60px);margin:18px 0 9px;line-height:1.1}.hero h1 #hero-name{overflow-wrap:anywhere}.hero-headline{font-size:19px}.lead{font-size:14px;line-height:1.75}.hero-side{padding:16px}.hero-bottom{margin-top:31px;gap:12px;font-size:9px}.section{padding:58px 0}.section-heading{display:block;margin-bottom:25px}.section-heading h2{font-size:clamp(29px,8vw,38px)}.section-heading p{margin-top:12px;font-size:13px}.filters{margin-bottom:16px}.filter{font-size:11px;padding:7px 9px}.project-grid{grid-template-columns:1fr;gap:13px}.visual,.featured .visual{aspect-ratio:1.65/1}.project-content{padding:19px}.project-content h3{font-size:22px}.project-content p{font-size:12px}.project-client{font-size:10px}.exp-row{grid-template-columns:minmax(0,1fr) 20px;gap:8px 12px;padding:20px 0}.exp-date{grid-column:1/-1}.exp-info{grid-column:1}.exp-arrow{grid-column:2;grid-row:2}.exp-info h3{font-size:16px}.exp-info p{font-size:12px}.about-layout,.contact-layout{grid-template-columns:1fr;gap:24px}.about-layout .about-title{font-size:34px}.portrait-placeholder{width:min(100%,240px);aspect-ratio:1.8/1;margin-top:18px}.about-copy .big{font-size:16px}.skill-row{grid-template-columns:1fr;gap:4px;padding:12px 0}.contact{padding:58px 0}.contact h2{font-size:36px}.contact-layout{gap:20px}.contact-links{padding-bottom:10px}.contact-card{grid-template-columns:65px minmax(0,1fr);padding:15px}.contact-card a{font-size:12px}.footer-inner{gap:12px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.dialog-inner{padding:24px 19px}.dialog-intro{font-size:14px}.dialog-section p{font-size:12px}.editor-toggle{right:12px;bottom:12px}.editor-panel{right:12px;bottom:62px;left:12px;width:auto}}
+@media(max-width:650px){.wrap{width:calc(100% - 38px)}header .wrap{height:62px}.nav{top:62px;left:0;right:0;background:#fff;padding:19px 21px;gap:17px;box-shadow:0 10px 20px rgba(0,0,0,.05)}.nav a{font-size:14px}.hero{padding:62px 0 30px}.hero-grid{grid-template-columns:1fr;gap:23px}.hero h1{font-size:clamp(42px,12vw,60px);margin:18px 0 9px;line-height:1.1}.hero h1 #hero-name{overflow-wrap:anywhere}.hero-headline{font-size:19px}.lead{font-size:14px;line-height:1.75}.hero-side{padding:16px}.hero-bottom{margin-top:31px;gap:12px;font-size:9px}.section{padding:58px 0}.section-heading{display:block;margin-bottom:25px}.section-heading h2{font-size:clamp(29px,8vw,38px)}.section-heading p{margin-top:12px;font-size:13px}.filters{margin-bottom:16px}.filter{font-size:11px;padding:7px 9px}.project-grid{grid-template-columns:1fr;gap:13px}.visual,.featured .visual{aspect-ratio:1.65/1}.project-content{padding:19px}.project-content h3{font-size:22px}.project-content p{font-size:12px}.project-client{font-size:10px}.exp-row{grid-template-columns:minmax(0,1fr) 20px;gap:8px 12px;padding:20px 0}.exp-date{grid-column:1/-1}.exp-info{grid-column:1}.exp-arrow{grid-column:2;grid-row:2}.exp-info h3{font-size:16px}.exp-info p{font-size:12px}.about-layout,.contact-layout{grid-template-columns:1fr;gap:24px}.about-layout .about-title{font-size:34px}.portrait-placeholder{width:min(100%,240px);margin-top:18px}.about-copy .big{font-size:16px}.skill-row{grid-template-columns:1fr;gap:4px;padding:12px 0}.contact{padding:58px 0}.contact h2{font-size:36px}.contact-layout{gap:20px}.contact-links{padding-bottom:10px}.contact-card{grid-template-columns:65px minmax(0,1fr);padding:15px}.contact-card a{font-size:12px}.footer-inner{gap:12px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.dialog-inner{padding:24px 19px}.dialog-intro{font-size:14px}.dialog-section p{font-size:12px}.editor-toggle{right:12px;bottom:12px}.editor-panel{right:12px;bottom:62px;left:12px;width:auto}}
 @media(max-width:380px){.wrap{width:calc(100% - 30px)}.hero h1{font-size:40px}.hero-button{min-height:42px;padding:0 12px;font-size:12px}.project-content{padding:17px}.contact-card{grid-template-columns:1fr;gap:4px}.contact-card-label:not(:first-child){margin-top:8px}}
 .hero{padding:clamp(42px,5.5vw,68px) 0 24px}
 .hero-grid{grid-template-columns:minmax(0,1fr);gap:0;align-items:start;max-width:860px}
@@ -281,11 +281,11 @@ function prepareRedesign(){
   }
   const aboutIntro=document.querySelector('.about-layout > div:first-child');
   if(aboutIntro&&!aboutIntro.querySelector('.portrait-placeholder')){
-    const portrait=document.createElement('div');
+    const portrait=document.createElement('img');
     portrait.className='portrait-placeholder';
-    portrait.setAttribute('role','img');
-    portrait.setAttribute('aria-label','Space reserved for a professional headshot');
-    portrait.textContent='Professional Headshot';
+    portrait.src='assets/images/professional-headshot.jpg';
+    portrait.alt='Carlyn Weng, professional headshot at UC San Diego';
+    portrait.loading='lazy';
     aboutIntro.append(portrait);
   }
   const projectDetails=[
